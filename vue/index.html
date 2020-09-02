@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charles Oliveira</title>
+    <meta
+      name="description"
+      content="A little about Charles Oliveira, your student life, jobs, experiences."
+    />
+    <meta
+      name="keywords"
+      content="chaso, chasoliveira, charles oliveira, charles silva oliveira, analista de sistemas, desenvolvedor, developer, Systems Analyst, .Net Developer, Desenvolvedor .Net, ASP.NET, ASP.NET MVC, MVC, TI, Analista de TI, Software, Analista de Software, C#, Desenvolvedor C#,c sharp,c-sharp, vb.net"
+    />
+    <meta name="author" content="Charles Oliveira" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar"></nav>
+    <div id="app">
+      <div class="cart">
+        <p>Cart ({{cart.length}})</p>
+      </div>
+      <product
+        :premium="premium"
+        @add-to-cart="updateCart"
+        @remove-from-cart="removeFromCart"
+      ></product>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
